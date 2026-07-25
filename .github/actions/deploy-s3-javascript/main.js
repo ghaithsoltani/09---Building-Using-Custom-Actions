@@ -1,9 +1,8 @@
-import * as core from '@actions/core';
-import * as github from '@actions/github';
-import * as exec from '@actions/exec';
+const core = require('@actions/core');   // ← CJS require()
+const github = require('@actions/github')
+const exec = require('@actions/exec')
 
 function run() {
     core.notice('Hello from my custom JavaScript Action!');
 }
-
 run();
