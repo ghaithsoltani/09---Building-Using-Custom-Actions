@@ -1,5 +1,16 @@
 name: 'Deploy to S3'
 description: 'Custom JavaScript action'
+inputs:
+  bucket:
+    description: 'The s2 bucket name.'
+    required: true
+  buket-region:
+    description: 'The region of the s3 bucket.'
+    required: false
+    default: 'us-east-1'
+  dist-folder:
+    description: 'The folder containing the deployable files.'
+    required: true
 runs:
   using: 'node24'
   main: 'main.js'   # ← must match your filename
