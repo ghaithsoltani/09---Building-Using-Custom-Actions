@@ -1,7 +1,3 @@
-# Don't ignore node_modules for this action - GitHub runner needs it
-# (For real projects, use ncc to bundle instead)
-
-# But still ignore logs and OS files
 npm-debug.log*
 .DS_Store
 .env
