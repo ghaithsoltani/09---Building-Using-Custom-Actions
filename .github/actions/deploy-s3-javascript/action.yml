@@ -2,4 +2,4 @@ name: 'Deploy to S3'
 description: 'Custom JavaScript action'
 runs:
   using: 'node24'
-  main: 'main.js'   # ← must match your filename
+  main: 'dist/main.js'   # ← must match your filename
