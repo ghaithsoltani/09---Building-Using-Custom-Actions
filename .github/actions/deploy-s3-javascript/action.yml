@@ -1,5 +1,5 @@
-name: 'Deploy to AWS S3' # about learn more : https://docs.github.com/en/actions/tutorials/create-actions/create-a-javascript-action
-description: 'Deploy a static website via AWS S3.'
+name: 'Deploy to S3'
+description: 'Custom JavaScript action'
 runs:
-  using: 'node16'
-  main: 'main.js'
+  using: 'node24'
+  main: 'main.js'   # ← must match your filename
